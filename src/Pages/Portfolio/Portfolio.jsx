@@ -1,5 +1,5 @@
 import React from "react";
-import { PriButton, SecButton } from "../../styles/globalStyles";
+import { Links, PriButton, SecButton } from "../../styles/globalStyles";
 import {
   PortfolioContainer,
   PortfolioGrid,
@@ -29,12 +29,26 @@ const Portfolio = () => {
                 <CardTitle>Project 1</CardTitle>
               </CardHeader>
               <CardBody>
-                <BodyTitle>Amazone Clone</BodyTitle>
-                <BodyImage />
+                <BodyTitle>Todo App</BodyTitle>
+                <BodyImage src="https://react-redux-toolkit-todo.herokuapp.com/" />
               </CardBody>
               <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
+                <PriButton>
+                  <Links
+                    target="blank"
+                    href="https://react-redux-toolkit-todo.herokuapp.com/"
+                  >
+                    Live
+                  </Links>
+                </PriButton>
+                <SecButton>
+                  <Links
+                    target="blank"
+                    href="https://github.com/johndev247/React-Redux-Todo"
+                  >
+                    Code
+                  </Links>
+                </SecButton>
               </CardButtons>
             </Projects>
             <Projects>

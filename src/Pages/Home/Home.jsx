@@ -31,8 +31,6 @@ import {
 import Img from "../../images/IMG.jpg";
 import { Container } from "../../styles/globalStyles";
 import { Typography } from "@material-ui/core";
-import { red } from "@material-ui/core/colors";
-
 const Home = () => {
   return (
     <>

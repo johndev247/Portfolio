@@ -138,7 +138,11 @@ export const BodyTitle = styled.h3`
   color: ${({ theme }) => theme.titles};
   text-align: center;
 `;
-export const BodyImage = styled.img``;
+export const BodyImage = styled.iframe`
+  width: 98%;
+  margin: 0 auto;
+  height: 70%;
+`;
 
 export const CardButtons = styled.div`
   display: flex;

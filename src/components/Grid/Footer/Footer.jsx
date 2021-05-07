@@ -12,6 +12,7 @@ import {
 import { FooterGrid } from "../../../styles/grid.style";
 
 import { FooterBox } from "./footer.style";
+import { Links } from "../../../styles/globalStyles";
 
 const Footer = () => {
   return (
@@ -22,16 +23,24 @@ const Footer = () => {
             <CopyRight> &copy; John {new Date().getFullYear()}</CopyRight>
             <SocialIcons>
               <Icons>
-                <Facebook />
+                <Links target="blank" href="https://facebook.com/johndev247/">
+                  <Facebook />
+                </Links>
               </Icons>
               <Icons>
-                <Instagram />
+                <Links target="blank" href="https://instagram.com/johndev247/">
+                  <Instagram />
+                </Links>
               </Icons>
               <Icons>
-                <Twitter />
+                <Links target="blank" href="https://twitter.com/johndev247/">
+                  <Twitter />
+                </Links>
               </Icons>
               <Icons>
-                <GitHub />
+                <Links target="blank" href="https://github.com/johndev247/">
+                  <GitHub />
+                </Links>
               </Icons>
             </SocialIcons>
           </FooterItems>

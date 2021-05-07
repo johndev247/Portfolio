@@ -16,10 +16,16 @@ export const Container = styled.div`
   margin-top: 2px;
 `;
 
+export const Links = styled.a`
+  background-color: unset;
+  text-decoration: none;
+  color: unset;
+`;
+
 export const PriButton = styled.button`
   width: 31%;
   outline: none;
-  height: 2.5em;
+  height: 2.2em;
   border-style: outset;
   color: ${({ theme }) => theme.text};
   border-radius: 3.5em;
@@ -34,7 +40,7 @@ export const PriButton = styled.button`
 export const SecButton = styled.button`
   width: 31%;
   color: ${({ theme }) => theme.text};
-  height: 2.5em;
+  height: 2.2em;
   outline: none;
   border-style: outset;
   border-radius: 3.5em;

@@ -4,17 +4,9 @@ import {
   ContactContainer,
   ContactHeader,
   ContactTitle,
-  InputFields,
-  TextInput,
-  MessageInput,
 } from "./contact.style";
-import { VarButton } from "../../styles/globalStyles";
-import { InputLabel } from "./contact.style";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
   return (
     <ContactContainer>
       <ContactHeader>
@@ -44,6 +36,8 @@ const Contact = () => {
           </VarButton>
         </form> */}
         <iframe
+          title="Contact"
+          style={{ color: "red" }}
           src="https://docs.google.com/forms/d/e/1FAIpQLSd4tkMFU-KhJoirIMdNi1Byy8W3NW8MWWQ42rr200-jo5jRqg/viewform?embedded=true"
           width="100%"
           height="100%"
@@ -51,7 +45,7 @@ const Contact = () => {
           marginheight="0"
           marginwidth="0"
         >
-          Loading…
+          Loading......
         </iframe>
       </ContactBody>
     </ContactContainer>
