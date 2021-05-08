@@ -8,7 +8,7 @@ export const useDarkMode = () => {
   };
 
   const themeToggler = () => {
-    theme === "dark" ? setMode("light") : setMode("dark");
+    theme === "light" ? setMode("dark") : setMode("light");
   };
 
   useEffect(() => {
