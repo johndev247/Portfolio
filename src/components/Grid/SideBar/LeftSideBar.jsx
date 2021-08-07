@@ -1,8 +1,8 @@
-import React, { useState, forwardRef, useImperativeHandle } from "react";
-import { AiOutlineContacts } from "react-icons/ai";
-import { FiBook } from "react-icons/fi";
-import { GiSkills } from "react-icons/gi";
-import { IoMdApps } from "react-icons/io";
+import React, {useState, forwardRef, useImperativeHandle} from "react";
+import {AiOutlineContacts} from "react-icons/ai";
+import {FiBook} from "react-icons/fi";
+import {GiSkills} from "react-icons/gi";
+import {IoMdApps} from "react-icons/io";
 
 import {
   LeftBar,
@@ -19,14 +19,14 @@ import {
   MenuLink,
   SideSocialIcons,
 } from "./leftSide.style";
-import { MobileExit } from "../../MobileMenus/mobileMenus.style";
-import { LeftSideGrid } from "../../../styles/grid.style";
-import AvatarPic from "../../../images/AvatartPic.jpg";
-import { Container } from "../../../styles/globalStyles";
-import { Home } from "@material-ui/icons";
+import {MobileExit} from "../../MobileMenus/mobileMenus.style";
+import {LeftSideGrid} from "../../../styles/grid.style";
+import AvatarPic from "../../../images/Passport.jpg";
+import {Container} from "../../../styles/globalStyles";
+import {Home} from "@material-ui/icons";
 
-import { Facebook, GitHub, Instagram, Twitter } from "../Footer/footer.style";
-import { Icons } from "../Footer/footer.style";
+import {Facebook, GitHub, Instagram, Twitter} from "../Footer/footer.style";
+import {Icons} from "../Footer/footer.style";
 
 const LeftSideBar = forwardRef((props, ref) => {
   const [hide, setHide] = useState(true);

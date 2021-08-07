@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { func, string } from "prop-types";
+import React, {useEffect, useState} from "react";
+import {func, string} from "prop-types";
 import styled from "styled-components";
 const Button = styled.div`
   position: absolute;
   right: 10px;
   top: 10px;
-  color: ${({ theme }) => theme.variant};
+  color: ${({theme}) => theme.variant};
   box-shadow: 0px 0px 3px 1px #262527;
-  background-color: ${({ theme }) => theme.text};
+  background-color: ${({theme}) => theme.text};
   width: 75px;
   height: 31px;
   cursor: pointer;
@@ -20,7 +20,7 @@ const Button = styled.div`
 
 export const Round = styled.div`
   position: absolute;
-  background-color: ${({ theme }) => theme.variant};
+  background-color: ${({theme}) => theme.variant};
   width: 25px;
   border-radius: 50%;
   height: 25px;
@@ -28,7 +28,7 @@ export const Round = styled.div`
   margin-left: -2px;
   margin-right: 3px;
   transition: 0.1s all ease-in;
-  right: ${({ right }) => (right ? position.right : position.left)};
+  right: ${({right}) => (right ? position.right : position.left)};
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -45,25 +45,25 @@ const ToggleBox = styled.div`
 `;
 const LeftLabel = styled.div`
   position: absolute;
-  top: 5px;
-  left: 6px;
+  top: 8px;
+  left: 33px;
   background: unset;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-family: "Martel Sans";
   font-weight: bold;
   letter-spacing: 0.07em;
-  display: ${({ right }) => (right ? "none" : "block")};
+  display: ${({right}) => (right ? "none" : "block")};
 `;
 const RightLabel = styled.div`
   position: absolute;
-  top: 5px;
-  left: 33px;
+  top: 8px;
+  right: 33px;
   background: unset;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-family: "Martel Sans";
   font-weight: bold;
   letter-spacing: 0.07em;
-  display: ${({ right }) => (right ? "block" : "none")};
+  display: ${({right}) => (right ? "block" : "none")};
 `;
 
 const position = {
@@ -71,7 +71,7 @@ const position = {
   left: "44px",
 };
 
-const Toggle = ({ theme, toggleTheme }) => {
+const Toggle = ({theme, toggleTheme}) => {
   const [right, setRight] = useState(localStorage.getItem("right") === "true");
 
   useEffect(() => {
@@ -91,7 +91,7 @@ const Toggle = ({ theme, toggleTheme }) => {
     >
       <ToggleBox>
         <LeftLabel right={right}>Light</LeftLabel>
-        <Round right={right ? position.right : position.left}></Round>
+        <Round right={right ? position.left : position.right}></Round>
         <RightLabel right={right}>Night</RightLabel>
       </ToggleBox>
     </Button>
