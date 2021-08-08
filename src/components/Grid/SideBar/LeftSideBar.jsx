@@ -24,6 +24,7 @@ import {LeftSideGrid} from "../../../styles/grid.style";
 import AvatarPic from "../../../images/Passport.jpg";
 import {Container} from "../../../styles/globalStyles";
 import {Home} from "@material-ui/icons";
+import {Links} from "../../../styles/globalStyles";
 
 import {Facebook, GitHub, Instagram, Twitter} from "../Footer/footer.style";
 import {Icons} from "../Footer/footer.style";
@@ -93,16 +94,24 @@ const LeftSideBar = forwardRef((props, ref) => {
             </LeftSideCopyright>
             <SideSocialIcons>
               <Icons>
-                <Facebook />
+                <Links target="blank" href="https://facebook.com/johndev247/">
+                  <Facebook />
+                </Links>
               </Icons>
               <Icons>
-                <Instagram />
+                <Links target="blank" href="https://instagram.com/johndev247/">
+                  <Instagram />
+                </Links>
               </Icons>
               <Icons>
-                <Twitter />
+                <Links target="blank" href="https://twitter.com/johndev247/">
+                  <Twitter />
+                </Links>
               </Icons>
               <Icons>
-                <GitHub />
+                <Links target="blank" href="https://github.com/johndev247/">
+                  <GitHub />
+                </Links>
               </Icons>
             </SideSocialIcons>
           </LeftSideFooter>
