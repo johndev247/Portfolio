@@ -1,5 +1,5 @@
 import React from "react";
-import { Links, PriButton, SecButton } from "../../styles/globalStyles";
+import {Links, PriButton, SecButton} from "../../styles/globalStyles";
 import {
   PortfolioContainer,
   PortfolioGrid,
@@ -14,6 +14,8 @@ import {
   BodyTitle,
   BodyImage,
 } from "./portfolio.style";
+import tetrisPic from "../../images/tetris.png";
+import todoPic from "../../images/todo.png";
 
 const Portfolio = () => {
   return (
@@ -29,8 +31,34 @@ const Portfolio = () => {
                 <CardTitle>Project 1</CardTitle>
               </CardHeader>
               <CardBody>
+                <BodyTitle> ECommers App</BodyTitle>
+                <BodyImage />
+              </CardBody>
+              <CardButtons>
+                <PriButton>Live</PriButton>
+                <SecButton>Code</SecButton>
+              </CardButtons>
+            </Projects>
+            <Projects>
+              <CardHeader>
+                <CardTitle>Project 2</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <BodyTitle> Investment App</BodyTitle>
+                <BodyImage />
+              </CardBody>
+              <CardButtons>
+                <PriButton>Live</PriButton>
+                <SecButton>Code</SecButton>
+              </CardButtons>
+            </Projects>
+            <Projects>
+              <CardHeader>
+                <CardTitle>Project 3</CardTitle>
+              </CardHeader>
+              <CardBody>
                 <BodyTitle>Todo App</BodyTitle>
-                <BodyImage src="https://react-redux-toolkit-todo.herokuapp.com/" />
+                <BodyImage src={todoPic} />
               </CardBody>
               <CardButtons>
                 <PriButton>
@@ -53,93 +81,26 @@ const Portfolio = () => {
             </Projects>
             <Projects>
               <CardHeader>
-                <CardTitle>Project 2</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <BodyTitle> Social Media App</BodyTitle>
-                <BodyImage />
-              </CardBody>
-              <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
-              </CardButtons>
-            </Projects>
-            <Projects>
-              <CardHeader>
-                <CardTitle>Project 3</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <BodyTitle> School System</BodyTitle>
-                <BodyImage />
-              </CardBody>
-              <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
-              </CardButtons>
-            </Projects>
-            <Projects>
-              <CardHeader>
                 <CardTitle>Project 4</CardTitle>
               </CardHeader>
               <CardBody>
-                <BodyTitle> Bussiness Platform</BodyTitle>
-                <BodyImage />
+                <BodyTitle>Tetris Game</BodyTitle>
+                <BodyImage src={tetrisPic} />
               </CardBody>
               <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
-              </CardButtons>
-            </Projects>
-            <Projects>
-              <CardHeader>
-                <CardTitle>Project 3</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <BodyTitle> School System</BodyTitle>
-                <BodyImage />
-              </CardBody>
-              <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
-              </CardButtons>
-            </Projects>
-            <Projects>
-              <CardHeader>
-                <CardTitle>Project 4</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <BodyTitle> Bussiness Platform</BodyTitle>
-                <BodyImage />
-              </CardBody>
-              <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
-              </CardButtons>
-            </Projects>
-            <Projects>
-              <CardHeader>
-                <CardTitle>Project 3</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <BodyTitle> School System</BodyTitle>
-                <BodyImage />
-              </CardBody>
-              <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
-              </CardButtons>
-            </Projects>
-            <Projects>
-              <CardHeader>
-                <CardTitle>Project 4</CardTitle>
-              </CardHeader>
-              <CardBody>
-                <BodyTitle> Bussiness Platform</BodyTitle>
-                <BodyImage />
-              </CardBody>
-              <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
+                <PriButton>
+                  <Links target="blank" href="https://playtetro.herokuapp.com">
+                    Live
+                  </Links>
+                </PriButton>
+                <SecButton>
+                  <Links
+                    target="blank"
+                    href="https://github.com/johndev247/tetris"
+                  >
+                    Code
+                  </Links>
+                </SecButton>
               </CardButtons>
             </Projects>
           </PortfolioContainer>

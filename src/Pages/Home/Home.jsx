@@ -29,8 +29,8 @@ import {
   Break,
 } from "./homePage";
 import Img from "../../images/IMG.jpg";
-import { Container } from "../../styles/globalStyles";
-import { Typography } from "@material-ui/core";
+import {Container} from "../../styles/globalStyles";
+import {Typography} from "@material-ui/core";
 const Home = () => {
   return (
     <>
@@ -53,10 +53,10 @@ const Home = () => {
                   <SpanThree>Git</SpanThree>
                 </CircleThree>
                 <CircleFour>
-                  <SpanFour>Javasript</SpanFour>
+                  <SpanFour>Rest API</SpanFour>
                 </CircleFour>
                 <CircleFive>
-                  <SpanFive>Node Js</SpanFive>
+                  <SpanFive>Graphql</SpanFive>
                 </CircleFive>
                 <CircleSix>
                   <SpanSix>
@@ -69,7 +69,9 @@ const Home = () => {
                   </SpanSeven>
                 </CircleSeven>
                 <CircleEight>
-                  <SpanEight>React Js</SpanEight>
+                  <SpanEight>
+                    React Js/ <Break> Redux </Break>
+                  </SpanEight>
                 </CircleEight>
                 <IllusPic src={Img} />
               </PicIllus>
@@ -78,31 +80,23 @@ const Home = () => {
         </Container>
         <Discription>
           <Container>
-            <Name>
-              <FullName variant="h5">
-                <Typed strings={["JOHN SOLOMON"]} typeSpeed={120} />
-              </FullName>
-            </Name>
-          </Container>
-          <Container>
             <ShowCase>
               <Typography variant="h4">
-                <Typed
-                  strings={[
-                    "Front-End ",
-                    "Back-End ",
-                    "FullStack ",
-                    "Git",
-                    "Mongo Db ",
-                    "React Js ",
-                    "JavaScript ",
-                  ]}
-                  typeSpeed={100}
-                  backDelay={80}
-                  loop
-                />
+                <Typed strings={["John Solomon "]} typeSpeed={150} />
               </Typography>
             </ShowCase>
+          </Container>
+          <Container>
+            <Name>
+              <FullName variant="h6">
+                <Typed
+                  strings={[
+                    "Hard-working web developer with a flair for creating elegant solutions in the least amount of time. Developed an Ecommerce webapp, customer web portal, and online game webapp. Passionate about software architecture and cloud computing. Regular attendee of web developer meetups.",
+                  ]}
+                  typeSpeed={80}
+                />
+              </FullName>
+            </Name>
           </Container>
         </Discription>
       </HomePage>

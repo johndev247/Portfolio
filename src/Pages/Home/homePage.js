@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import {Typography} from "@material-ui/core";
 import styled from "styled-components";
 
 export const HomePage = styled.div`
@@ -30,7 +30,7 @@ export const Pic = styled.img`
 `;
 
 export const PicIllus = styled.div`
-  background-color: ${({ theme }) => theme.body};
+  background-color: ${({theme}) => theme.body};
   width: 350px;
   height: 350px;
   display: flex;
@@ -48,90 +48,90 @@ export const IllusPic = styled.img`
 `;
 
 export const CircleOne = styled.div`
-  background-color: ${({ theme }) => theme.bubbleBlue};
+  background-color: ${({theme}) => theme.bubbleBlue};
   position: absolute;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   color: white;
   right: 3em;
   top: 2.7em;
 `;
 export const CircleTwo = styled.div`
-  background-color: ${({ theme }) => theme.bubbleGreen};
+  background-color: ${({theme}) => theme.bubbleGreen};
   position: absolute;
   color: white;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   right: 8.6em;
   top: 0.1em;
 `;
 export const CircleThree = styled.div`
-  background-color: ${({ theme }) => theme.bubblePupple};
+  background-color: ${({theme}) => theme.bubblePupple};
   position: absolute;
   color: white;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   left: 2.7em;
   top: 2.7em;
 `;
 export const CircleFour = styled.div`
-  background-color: ${({ theme }) => theme.bubbleDarkBlue};
+  background-color: ${({theme}) => theme.bubbleDarkBlue};
   position: absolute;
   color: white;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   right: 8.9em;
   bottom: 0.5em;
 `;
 export const CircleFive = styled.div`
-  background-color: ${({ theme }) => theme.bubbleBrown};
+  background-color: ${({theme}) => theme.bubbleBrown};
   position: absolute;
   color: white;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   right: 0.5em;
   bottom: 8.6em;
 `;
 export const CircleSix = styled.div`
-  background-color: ${({ theme }) => theme.bubbleBlack};
+  background-color: ${({theme}) => theme.bubbleBlack};
   position: absolute;
   color: white;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   left: 2.7em;
   bottom: 2.7em;
 `;
 export const CircleSeven = styled.div`
-  background-color: ${({ theme }) => theme.bubblePink};
+  background-color: ${({theme}) => theme.bubblePink};
   position: absolute;
   color: white;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   right: 3em;
   bottom: 2.7em;
 `;
 export const CircleEight = styled.div`
-  background-color: ${({ theme }) => theme.bubbleRed};
+  background-color: ${({theme}) => theme.bubbleRed};
   position: absolute;
   color: white;
   width: 20%;
   height: 20%;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.variant};
+  border: 2px solid ${({theme}) => theme.variant};
   left: 0.5em;
   bottom: 8.6em;
 `;
@@ -203,7 +203,7 @@ export const Break = styled.span`
 export const Discription = styled.div`
   width: 100%;
   display: grid;
-  grid-template-rows: 50px 50px;
+  grid-template-rows: 50px 70px;
   grid-area: "discription";
   grid-template-areas:
     "name"
@@ -213,15 +213,20 @@ export const Discription = styled.div`
 export const Name = styled.div`
   width: 100%;
   height: 100%;
+  text-align: center;
   grid-area: name;
+  @media only screen and (max-width: 768px) {
+    overflow: auto;
+    height: 70px;
+  }
 `;
 export const FullName = styled(Typography)`
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
 `;
 
 export const ShowCase = styled.div`
   width: 100%;
   height: 100%;
   grid-area: showcase;
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
 `;

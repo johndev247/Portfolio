@@ -24,7 +24,7 @@ export const TitleSection = styled.div`
   grid-area: title;
 `;
 export const Title = styled.h1`
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
 `;
 
 export const PortfolioContainer = styled.div`
@@ -103,12 +103,12 @@ export const ProjectLists = styled.div`
 `;
 
 export const Projects = styled.div`
-  background-color: ${({ theme }) => theme.variant};
+  background-color: ${({theme}) => theme.variant};
   display: grid;
   margin-left: 1em;
   border-radius: 1em;
   height: 250px;
-  box-shadow: 0px 1px 5px 1px ${({ theme }) => theme.shadow};
+  box-shadow: 0px 1px 5px 1px ${({theme}) => theme.shadow};
   grid-template-rows: 25% 1fr 20%;
   grid-template-areas:
     "header"
@@ -127,7 +127,7 @@ export const CardHeader = styled.div`
 
 export const CardBody = styled.div`
   display: flex;
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -135,13 +135,14 @@ export const CardBody = styled.div`
 `;
 
 export const BodyTitle = styled.h3`
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
   text-align: center;
 `;
-export const BodyImage = styled.iframe`
+export const BodyImage = styled.img`
   width: 98%;
   margin: 0 auto;
   height: 70%;
+  max-height: 120px;
 `;
 
 export const CardButtons = styled.div`
@@ -155,5 +156,5 @@ export const CardButtons = styled.div`
 `;
 
 export const CardTitle = styled.h2`
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
 `;

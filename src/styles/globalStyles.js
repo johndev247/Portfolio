@@ -1,10 +1,10 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, {createGlobalStyle} from "styled-components";
 
 const GlobalSyles = createGlobalStyle`
  * {
    margin: 0;
     padding: 0;
-    background: ${({ theme }) => theme.body};
+    background: ${({theme}) => theme.body};
     font-family: "Martel Sans", serif;
  }`;
 
@@ -27,10 +27,10 @@ export const PriButton = styled.button`
   outline: none;
   height: 2.2em;
   border-style: outset;
-  color: ${({ theme }) => theme.text};
+  color: ${({theme}) => theme.text};
   border-radius: 3.5em;
-  border: 1px solid ${({ theme }) => theme.body};
-  background-color: ${({ theme }) => theme.priButton};
+  border: 1px solid ${({theme}) => theme.body};
+  background-color: ${({theme}) => theme.priButton};
   cursor: pointer;
   &:hover {
     font-weight: bold;
@@ -39,13 +39,13 @@ export const PriButton = styled.button`
 
 export const SecButton = styled.button`
   width: 31%;
-  color: ${({ theme }) => theme.text};
+  color: ${({theme}) => theme.text};
   height: 2.2em;
   outline: none;
   border-style: outset;
   border-radius: 3.5em;
-  border: 1px solid ${({ theme }) => theme.body};
-  background-color: ${({ theme }) => theme.secButton};
+  border: 1px solid ${({theme}) => theme.body};
+  background-color: ${({theme}) => theme.secButton};
   cursor: pointer;
   &:hover {
     font-weight: bold;
@@ -54,13 +54,13 @@ export const SecButton = styled.button`
 
 export const VarButton = styled.button`
   width: 50%;
-  color: ${({ theme }) => theme.text};
+  color: ${({theme}) => theme.text};
   height: 2.5em;
   outline: none;
   border-style: outset;
   border-radius: 3.5em;
-  border: 1px solid ${({ theme }) => theme.body};
-  background-color: ${({ theme }) => theme.priButton};
+  border: 1px solid ${({theme}) => theme.body};
+  background-color: ${({theme}) => theme.priButton};
   cursor: pointer;
   &:hover {
     font-weight: bold;

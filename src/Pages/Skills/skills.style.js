@@ -56,7 +56,7 @@ export const SkillsCardsWrapper = styled.div`
 export const Title = styled.h2`
   background-color: unset;
   text-align: center;
-  color: ${({ theme }) => theme.article};
+  color: ${({theme}) => theme.article};
 `;
 
 export const SkillsBody = styled.div`
@@ -81,14 +81,14 @@ export const SkillsCard = styled.div`
     "cardbody angle";
   border-radius: 1em;
   display: grid;
-  background-color: ${({ theme }) => theme.cards};
+  background-color: ${({theme}) => theme.cards};
   margin-bottom: 0.5em;
   @media only screen and (max-width: 768px) {
     width: 80%;
-    background-color: ${({ theme }) => theme.cards};
+    background-color: ${({theme}) => theme.cards};
     height: 50vh;
     margin-bottom: 0.5em;
-    box-shadow: 0px 0px 12px 0px ${({ theme }) => theme.shadow};
+    box-shadow: 0px 0px 12px 0px ${({theme}) => theme.shadow};
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
@@ -111,21 +111,21 @@ export const SkillCardBody = styled.div`
   margin: 1.2em auto;
   padding: 0.5em;
   grid-area: cardbody;
-  background-color: ${({ theme }) => theme.cards};
+  background-color: ${({theme}) => theme.cards};
   border-radius: 1em;
 `;
 
 export const CardDiscription = styled.blockquote`
   text-transform: capitalize;
-  background-color: ${({ theme }) => theme.cards};
-  color: ${({ theme }) => theme.article};
+  background-color: ${({theme}) => theme.cards};
+  color: ${({theme}) => theme.article};
 `;
 export const Traingle = styled.div`
   margin: 0;
   padding: 0;
   display: inline-block;
   border-left: 2% solid transparent;
-  border-right: 50px solid ${({ theme }) => theme.variant};
+  border-right: 50px solid ${({theme}) => theme.variant};
   border-bottom: 50px solid transparent;
   border-top: 50px solid transparent;
   grid-area: angle;
@@ -139,7 +139,7 @@ export const Traingle = styled.div`
     padding: 0;
     display: inline-block;
     border-left: 2% solid transparent;
-    border-right: 50px solid ${({ theme }) => theme.variant};
+    border-right: 50px solid ${({theme}) => theme.variant};
     border-bottom: 50px solid transparent;
     border-top: 50px solid transparent;
     grid-area: angle;
