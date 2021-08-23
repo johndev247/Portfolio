@@ -1,15 +1,15 @@
-import React, { useRef } from "react";
-import { ThemeProvider } from "styled-components";
+import React, {useRef} from "react";
+import {ThemeProvider} from "styled-components";
 import "./App.css";
-import { useDarkMode } from "./styles/useDarkMode";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {useDarkMode} from "./styles/useDarkMode";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Footer from "./components/Grid/Footer/Footer.jsx";
-import { MainGrid } from "./styles/grid.style";
-import { Main, MainBody, TopNav } from "./components/Grid/Main/main.style";
-import { MobileMenu } from "./components/MobileMenus/mobileMenus.style";
+import {MainGrid} from "./styles/grid.style";
+import {Main, MainBody, TopNav} from "./components/Grid/Main/main.style";
+import {MobileMenu} from "./components/MobileMenus/mobileMenus.style";
 import GlobalStyle from "./styles/globalStyles";
 import Grid from "./styles/grid.style";
-import { lightTheme, darkTheme } from "./styles/themes";
+import {lightTheme, darkTheme} from "./styles/themes";
 import Toggle from "./styles/toggler";
 import LeftSideBar from "./components/Grid/SideBar/LeftSideBar.jsx";
 import Home from "./Pages/Home/Home.jsx";
@@ -29,7 +29,7 @@ const App = () => {
   const HideSideBar = () => {
     ref.current.hideMenu();
   };
-  const themeMode = theme === "dark" ? lightTheme : darkTheme;
+  const themeMode = theme === "dark" ? darkTheme : lightTheme;
 
   return (
     <ThemeProvider theme={themeMode}>

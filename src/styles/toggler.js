@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {func, string} from "prop-types";
 import styled from "styled-components";
 const Button = styled.div`
   position: absolute;
@@ -28,7 +27,7 @@ export const Round = styled.div`
   margin-left: -2px;
   margin-right: 3px;
   transition: 0.1s all ease-in;
-  right: ${({right}) => (right ? position.right : position.left)};
+  right: ${({right}) => (right ? 0 : "44px")};
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -52,7 +51,7 @@ const LeftLabel = styled.div`
   font-family: "Martel Sans";
   font-weight: bold;
   letter-spacing: 0.07em;
-  display: ${({right}) => (right ? "none" : "block")};
+  display: ${({left}) => (left ? "block" : "none")};
 `;
 const RightLabel = styled.div`
   position: absolute;
@@ -66,19 +65,14 @@ const RightLabel = styled.div`
   display: ${({right}) => (right ? "block" : "none")};
 `;
 
-const position = {
-  right: 0,
-  left: "44px",
-};
-
-const Toggle = ({theme, toggleTheme}) => {
+const Toggle = ({toggleTheme}) => {
   const [right, setRight] = useState(localStorage.getItem("right") === "true");
 
   useEffect(() => {
     localStorage.setItem("right", right);
   }, [right]);
 
-  const toggleMode = () => {
+  const toggleButton = () => {
     setRight(!right);
   };
 
@@ -86,19 +80,15 @@ const Toggle = ({theme, toggleTheme}) => {
     <Button
       onClick={() => {
         toggleTheme();
-        toggleMode();
+        toggleButton();
       }}
     >
       <ToggleBox>
-        <LeftLabel right={right}>Light</LeftLabel>
-        <Round right={right ? position.left : position.right}></Round>
+        <LeftLabel left={!right}>Light</LeftLabel>
+        <Round right={right}></Round>
         <RightLabel right={right}>Night</RightLabel>
       </ToggleBox>
     </Button>
   );
-};
-Toggle.propTypes = {
-  theme: string.isRequired,
-  toggleTheme: func.isRequired,
 };
 export default Toggle;
