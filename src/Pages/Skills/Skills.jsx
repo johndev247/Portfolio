@@ -1,10 +1,9 @@
 import React from "react";
-import {Title, VatLine} from "./skills.style";
+import {SkillsContainer, Title, VatLine} from "./skills.style";
 import {
   ResumeBody,
   ResumeBodyContainer,
   ResumeCard,
-  ResumeContainer,
   ResumeTitle,
   SquareBox,
   VertLine,
@@ -18,7 +17,7 @@ import {
 const Skills = () => {
   return (
     <>
-      <ResumeContainer>
+      <SkillsContainer>
         <ResumeTitle>
           <Title>Skills</Title>
         </ResumeTitle>
@@ -99,7 +98,7 @@ const Skills = () => {
             <VatLine />
           </VertLine>
         </ResumeBox>
-      </ResumeContainer>
+      </SkillsContainer>
     </>
   );
 };

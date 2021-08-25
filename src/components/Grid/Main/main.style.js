@@ -17,7 +17,7 @@ export const TopNav = styled.div`
   width: 100%;
   height: 50px;
   position: relative;
-  background-color: ${({ theme }) => theme.variant};
+  background-color: ${({theme}) => theme.variant};
   grid-area: topNav;
 `;
 export const MainBody = styled.div`
@@ -26,12 +26,3 @@ export const MainBody = styled.div`
   max-height: 660px;
   grid-area: mainBody;
 `;
-
-// export const MainContentens = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   margin-left: 2px;
-//   overflow-y: scroll;
-//   padding-right: 17px;
-//   box-sizing: content-box;
-// `;

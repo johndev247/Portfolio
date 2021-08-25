@@ -9,10 +9,10 @@ import {
   Twitter,
   FooterItems,
 } from "../Footer/footer.style";
-import { FooterGrid } from "../../../styles/grid.style";
+import {FooterGrid} from "../../../styles/grid.style";
 
-import { FooterBox } from "./footer.style";
-import { Links } from "../../../styles/globalStyles";
+import {FooterBox} from "./footer.style";
+import {Links} from "../../../styles/globalStyles";
 
 const Footer = () => {
   return (
@@ -23,22 +23,22 @@ const Footer = () => {
             <CopyRight> &copy; John {new Date().getFullYear()}</CopyRight>
             <SocialIcons>
               <Icons>
-                <Links target="blank" href="https://facebook.com/johndev247/">
+                <Links target="blank" href="https://facebook.com/johndev247">
                   <Facebook />
                 </Links>
               </Icons>
               <Icons>
-                <Links target="blank" href="https://instagram.com/johndev247/">
+                <Links target="blank" href="https://instagram.com/johndev247">
                   <Instagram />
                 </Links>
               </Icons>
               <Icons>
-                <Links target="blank" href="https://twitter.com/johndev247/">
+                <Links target="blank" href="https://twitter.com/johndev247">
                   <Twitter />
                 </Links>
               </Icons>
               <Icons>
-                <Links target="blank" href="https://github.com/johndev247/">
+                <Links target="blank" href="https://github.com/johndev247">
                   <GitHub />
                 </Links>
               </Icons>

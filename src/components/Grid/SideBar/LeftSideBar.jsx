@@ -29,7 +29,7 @@ import {Links} from "../../../styles/globalStyles";
 import {Facebook, GitHub, Instagram, Twitter} from "../Footer/footer.style";
 import {Icons} from "../Footer/footer.style";
 
-const LeftSideBar = forwardRef((props, ref) => {
+const LeftSideBar = forwardRef((ref) => {
   const [hide, setHide] = useState(true);
   const hideMenu = () => setHide(true);
   const showMenu = () => setHide(false);
@@ -55,36 +55,46 @@ const LeftSideBar = forwardRef((props, ref) => {
             <LeftSidLine />
             <Container>
               <LeftSideMenuList hide={hide} onClick={hideMenu}>
-                <LeftSideMenuItem>
-                  <LeftSideIcons>
-                    <Home />
-                  </LeftSideIcons>
-                  <MenuLink to="/"> HOME</MenuLink>
-                </LeftSideMenuItem>
-                <LeftSideMenuItem>
-                  <LeftSideIcons>
-                    <IoMdApps />
-                  </LeftSideIcons>
-                  <MenuLink to="/portfolio"> PORTFOLIO</MenuLink>
-                </LeftSideMenuItem>
-                <LeftSideMenuItem>
-                  <LeftSideIcons>
-                    <FiBook />
-                  </LeftSideIcons>
-                  <MenuLink to="/resume"> RESUME</MenuLink>
-                </LeftSideMenuItem>
-                <LeftSideMenuItem>
-                  <LeftSideIcons>
-                    <GiSkills />
-                  </LeftSideIcons>
-                  <MenuLink to="/skills"> SKILLS</MenuLink>
-                </LeftSideMenuItem>
-                <LeftSideMenuItem>
-                  <LeftSideIcons>
-                    <AiOutlineContacts />
-                  </LeftSideIcons>
-                  <MenuLink to="/contact"> CONTACT</MenuLink>
-                </LeftSideMenuItem>
+                <MenuLink to="/">
+                  <LeftSideMenuItem>
+                    <LeftSideIcons>
+                      <Home />
+                    </LeftSideIcons>
+                    HOME
+                  </LeftSideMenuItem>
+                </MenuLink>
+                <MenuLink to="/portfolio">
+                  <LeftSideMenuItem>
+                    <LeftSideIcons>
+                      <IoMdApps />
+                    </LeftSideIcons>
+                    PORTFOLIO
+                  </LeftSideMenuItem>
+                </MenuLink>
+                <MenuLink to="/resume">
+                  <LeftSideMenuItem>
+                    <LeftSideIcons>
+                      <FiBook />
+                    </LeftSideIcons>
+                    RESUME
+                  </LeftSideMenuItem>
+                </MenuLink>
+                <MenuLink to="/skills">
+                  <LeftSideMenuItem>
+                    <LeftSideIcons>
+                      <GiSkills />
+                    </LeftSideIcons>
+                    SKILLS
+                  </LeftSideMenuItem>
+                </MenuLink>
+                <MenuLink to="/contact">
+                  <LeftSideMenuItem>
+                    <LeftSideIcons>
+                      <AiOutlineContacts />
+                    </LeftSideIcons>
+                    CONTACT
+                  </LeftSideMenuItem>
+                </MenuLink>
               </LeftSideMenuList>
             </Container>
           </LeftSideMenu>
@@ -94,22 +104,22 @@ const LeftSideBar = forwardRef((props, ref) => {
             </LeftSideCopyright>
             <SideSocialIcons>
               <Icons>
-                <Links target="blank" href="https://facebook.com/johndev247/">
+                <Links target="blank" href="https://facebook.com/johndev247">
                   <Facebook />
                 </Links>
               </Icons>
               <Icons>
-                <Links target="blank" href="https://instagram.com/johndev247/">
+                <Links target="blank" href="https://instagram.com/johndev247">
                   <Instagram />
                 </Links>
               </Icons>
               <Icons>
-                <Links target="blank" href="https://twitter.com/johndev247/">
+                <Links target="blank" href="https://twitter.com/johndev247">
                   <Twitter />
                 </Links>
               </Icons>
               <Icons>
-                <Links target="blank" href="https://github.com/johndev247/">
+                <Links target="blank" href="https://github.com/johndev247">
                   <GitHub />
                 </Links>
               </Icons>

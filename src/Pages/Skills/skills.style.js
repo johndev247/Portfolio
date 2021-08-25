@@ -1,11 +1,10 @@
 import styled from "styled-components";
 export const SkillsContainer = styled.div`
   display: grid;
-  width: 98%;
-  margin: 0 auto;
+  width: 100%;
   height: 100%;
-  max-height: 650px;
   grid-template-rows: 50px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "title"
     "body";

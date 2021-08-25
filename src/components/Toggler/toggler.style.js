@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from "react";
 import styled from "styled-components";
-const Button = styled.div`
+export const Button = styled.div`
   position: absolute;
   right: 10px;
   top: 10px;
@@ -34,7 +33,7 @@ export const Round = styled.div`
   -o-border-radius: 50%;
 `;
 
-const ToggleBox = styled.div`
+export const ToggleBox = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
@@ -42,7 +41,7 @@ const ToggleBox = styled.div`
   background: unset;
   justify-content: space-between;
 `;
-const LeftLabel = styled.div`
+export const LeftLabel = styled.div`
   position: absolute;
   top: 8px;
   left: 33px;
@@ -53,7 +52,7 @@ const LeftLabel = styled.div`
   letter-spacing: 0.07em;
   display: ${({left}) => (left ? "block" : "none")};
 `;
-const RightLabel = styled.div`
+export const RightLabel = styled.div`
   position: absolute;
   top: 8px;
   right: 33px;
@@ -64,31 +63,3 @@ const RightLabel = styled.div`
   letter-spacing: 0.07em;
   display: ${({right}) => (right ? "block" : "none")};
 `;
-
-const Toggle = ({toggleTheme}) => {
-  const [right, setRight] = useState(localStorage.getItem("right") === "true");
-
-  useEffect(() => {
-    localStorage.setItem("right", right);
-  }, [right]);
-
-  const toggleButton = () => {
-    setRight(!right);
-  };
-
-  return (
-    <Button
-      onClick={() => {
-        toggleTheme();
-        toggleButton();
-      }}
-    >
-      <ToggleBox>
-        <LeftLabel left={!right}>Light</LeftLabel>
-        <Round right={right}></Round>
-        <RightLabel right={right}>Night</RightLabel>
-      </ToggleBox>
-    </Button>
-  );
-};
-export default Toggle;

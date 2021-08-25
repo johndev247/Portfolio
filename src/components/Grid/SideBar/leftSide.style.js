@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import styled from "styled-components";
 
 export const LeftBar = styled.div`
@@ -17,15 +17,15 @@ export const LeftBar = styled.div`
 
 export const MenuLink = styled(Link)`
   text-decoration: none;
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
   background-color: unset;
   &:hover {
-    color: ${({ theme }) => theme.text};
+    color: ${({theme}) => theme.text};
   }
 `;
 
 export const LeftSideNav = styled.div`
-  background-color: ${({ theme }) => theme.variant};
+  background-color: ${({theme}) => theme.variant};
   grid-area: mobexit;
   width: 100%;
   padding: 0;
@@ -79,13 +79,14 @@ export const LeftSideIcons = styled.div`
 export const LeftSideMenuItem = styled.li`
   display: flex;
   font-size: 0.9em;
-  color: ${({ theme }) => theme.titles};
+  color: ${({theme}) => theme.titles};
   padding: 0.3em;
   cursor: pointer;
   &:hover {
-    background-color: ${({ theme }) => theme.variant};
+    background-color: ${({theme}) => theme.variant};
     border-radius: 0.3em;
-    transition: 0.8s all ease-in-out;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
     padding-left: 3px;
   }
 `;
@@ -97,8 +98,8 @@ export const LeftSideFooter = styled.nav`
   left: 0;
   height: 50px;
   width: 100%;
-  box-shadow: 4px 6px 18px 1px ${({ theme }) => theme.shadow};
-  background-color: ${({ theme }) => theme.variant};
+  box-shadow: 4px 6px 18px 1px ${({theme}) => theme.shadow};
+  background-color: ${({theme}) => theme.variant};
   color: white;
   grid-area: navfooter;
 `;

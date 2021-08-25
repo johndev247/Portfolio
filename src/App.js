@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import {ThemeProvider} from "styled-components";
 import "./App.css";
-import {useDarkMode} from "./styles/useDarkMode";
+import {useDarkMode} from "./hooks/useDarkMode";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Footer from "./components/Grid/Footer/Footer.jsx";
 import {MainGrid} from "./styles/grid.style";
@@ -10,7 +10,7 @@ import {MobileMenu} from "./components/MobileMenus/mobileMenus.style";
 import GlobalStyle from "./styles/globalStyles";
 import Grid from "./styles/grid.style";
 import {lightTheme, darkTheme} from "./styles/themes";
-import Toggle from "./styles/toggler";
+import Toggler from "./components/Toggler/Toggler";
 import LeftSideBar from "./components/Grid/SideBar/LeftSideBar.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import RightSideBar from "./components/Grid/SideBar/RightSideBar";
@@ -41,7 +41,7 @@ const App = () => {
               <Main>
                 <TopNav>
                   <MobileMenu onClick={showSideBar} />
-                  <Toggle theme={theme} toggleTheme={themeToggler} />
+                  <Toggler toggleTheme={themeToggler} />
                 </TopNav>
                 <MainBody onClick={HideSideBar}>
                   <Switch>

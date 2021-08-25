@@ -11,8 +11,8 @@ import {
   CardBody,
   CardButtons,
   CardTitle,
-  BodyTitle,
   BodyImage,
+  ProjectDescription,
 } from "./portfolio.style";
 import tetrisPic from "../../images/tetris.png";
 import todoPic from "../../images/todo.png";
@@ -28,10 +28,12 @@ const Portfolio = () => {
           <PortfolioContainer>
             <Projects>
               <CardHeader>
-                <CardTitle>Project 1</CardTitle>
+                <CardTitle> ECommers App</CardTitle>
               </CardHeader>
               <CardBody>
-                <BodyTitle> ECommers App</BodyTitle>
+                <ProjectDescription>
+                  FullStack Ecommers App Like Amazon, Using The MERN STACK.
+                </ProjectDescription>
                 <BodyImage />
               </CardBody>
               <CardButtons>
@@ -41,10 +43,13 @@ const Portfolio = () => {
             </Projects>
             <Projects>
               <CardHeader>
-                <CardTitle>Project 2</CardTitle>
+                <CardTitle>Investment App</CardTitle>
               </CardHeader>
               <CardBody>
-                <BodyTitle> Investment App</BodyTitle>
+                <ProjectDescription>
+                  FullStack Product Investment App, Using The MERN STACK +
+                  Graphql.
+                </ProjectDescription>
                 <BodyImage />
               </CardBody>
               <CardButtons>
@@ -54,10 +59,12 @@ const Portfolio = () => {
             </Projects>
             <Projects>
               <CardHeader>
-                <CardTitle>Project 3</CardTitle>
+                <CardTitle>Todo App</CardTitle>
               </CardHeader>
               <CardBody>
-                <BodyTitle>Todo App</BodyTitle>
+                <ProjectDescription>
+                  Todo Task Check Listing App, Using React Js and Redux
+                </ProjectDescription>
                 <BodyImage src={todoPic} />
               </CardBody>
               <CardButtons>
@@ -81,10 +88,12 @@ const Portfolio = () => {
             </Projects>
             <Projects>
               <CardHeader>
-                <CardTitle>Project 4</CardTitle>
+                <CardTitle>Tetris Game</CardTitle>
               </CardHeader>
               <CardBody>
-                <BodyTitle>Tetris Game</BodyTitle>
+                <ProjectDescription>
+                  Advanced Tetris Game, Using React Js and Styled Components
+                </ProjectDescription>
                 <BodyImage src={tetrisPic} />
               </CardBody>
               <CardButtons>
