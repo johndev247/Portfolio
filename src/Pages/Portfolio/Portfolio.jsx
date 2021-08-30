@@ -16,6 +16,7 @@ import {
 } from "./portfolio.style";
 import tetrisPic from "../../images/tetris.png";
 import todoPic from "../../images/todo.png";
+import agropex from "../../images/agropex.png";
 
 const Portfolio = () => {
   return (
@@ -50,7 +51,7 @@ const Portfolio = () => {
                   FullStack Product Investment App, Using The MERN STACK +
                   Graphql.
                 </ProjectDescription>
-                <BodyImage />
+                <BodyImage src={agropex} />
               </CardBody>
               <CardButtons>
                 <PriButton>
