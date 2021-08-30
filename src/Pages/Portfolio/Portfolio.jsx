@@ -53,8 +53,19 @@ const Portfolio = () => {
                 <BodyImage />
               </CardBody>
               <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
+                <PriButton>
+                  <Links target="blank" href="https://agropex.herokuapp.com/">
+                    Live
+                  </Links>
+                </PriButton>
+                <SecButton>
+                  <Links
+                    target="blank"
+                    href="https://github.com/johndev247/agropex-client"
+                  >
+                    Code
+                  </Links>
+                </SecButton>
               </CardButtons>
             </Projects>
             <Projects>
@@ -71,7 +82,7 @@ const Portfolio = () => {
                 <PriButton>
                   <Links
                     target="blank"
-                    href="https://react-redux-toolkit-todo.herokuapp.com/"
+                    href="https://react-redux-toolkit-todo.herokuapp.com"
                   >
                     Live
                   </Links>
