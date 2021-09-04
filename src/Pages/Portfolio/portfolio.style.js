@@ -157,6 +157,7 @@ export const CardButtons = styled.div`
 
 export const CardTitle = styled.h2`
   color: ${({theme}) => theme.titles};
+  text-align: center;
 `;
 
 export const ProjectDescription = styled.blockquote`

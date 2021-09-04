@@ -1,4 +1,4 @@
-import React, {useState, forwardRef, useImperativeHandle} from "react";
+import React from "react";
 import {AiOutlineContacts} from "react-icons/ai";
 import {FiBook} from "react-icons/fi";
 import {GiSkills} from "react-icons/gi";
@@ -29,24 +29,13 @@ import {Links} from "../../../styles/globalStyles";
 import {Facebook, GitHub, Instagram, Twitter} from "../Footer/footer.style";
 import {Icons} from "../Footer/footer.style";
 
-const LeftSideBar = forwardRef((ref) => {
-  const [hide, setHide] = useState(true);
-  const hideMenu = () => setHide(true);
-  const showMenu = () => setHide(false);
-
-  useImperativeHandle(ref, () => {
-    return {
-      showMenu: showMenu,
-      hideMenu: hideMenu,
-    };
-  });
-
+const LeftSideBar = ({hide, hideHandler}) => {
   return (
     <>
       <LeftSideGrid hide={hide}>
         <LeftBar>
           <LeftSideNav>
-            <MobileExit hide={hide} onClick={hideMenu} />
+            <MobileExit hide={hide} onClick={hideHandler} />
           </LeftSideNav>
           <LeftSideAvatar>
             <Avatar src={AvatarPic} />
@@ -54,7 +43,7 @@ const LeftSideBar = forwardRef((ref) => {
           <LeftSideMenu>
             <LeftSidLine />
             <Container>
-              <LeftSideMenuList hide={hide} onClick={hideMenu}>
+              <LeftSideMenuList hide={hide} onClick={hideHandler}>
                 <MenuLink to="/">
                   <LeftSideMenuItem>
                     <LeftSideIcons>
@@ -129,6 +118,6 @@ const LeftSideBar = forwardRef((ref) => {
       </LeftSideGrid>
     </>
   );
-});
+};
 
 export default LeftSideBar;

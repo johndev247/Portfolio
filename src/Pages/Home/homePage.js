@@ -216,8 +216,8 @@ export const Name = styled.div`
   text-align: center;
   grid-area: name;
   @media only screen and (max-width: 768px) {
-    overflow: auto;
-    height: 70px;
+    overflow: scroll;
+    height: 140px;
   }
 `;
 export const FullName = styled(Typography)`

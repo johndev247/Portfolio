@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useState} from "react";
 import {ThemeProvider} from "styled-components";
 import "./App.css";
 import {useDarkMode} from "./hooks/useDarkMode";
@@ -22,15 +22,13 @@ import Contact from "./Pages/Contacts/Contact";
 
 const App = () => {
   const [theme, themeToggler] = useDarkMode();
-  const ref = useRef(null);
-  const showSideBar = () => {
-    ref.current.showMenu();
-  };
-  const HideSideBar = () => {
-    ref.current.hideMenu();
-  };
+  const [hide, setHide] = useState(true);
+  const showSideBar = () => setHide(false);
+
+  const HideSideBar = () => setHide(true);
   const themeMode = theme === "dark" ? darkTheme : lightTheme;
 
+  console.log(hide);
   return (
     <ThemeProvider theme={themeMode}>
       <Router>
@@ -54,7 +52,7 @@ const App = () => {
                 </MainBody>
               </Main>
             </MainGrid>
-            <LeftSideBar ref={ref} />
+            <LeftSideBar hide={hide} hideHandler={HideSideBar} />
             <RightSideBar />
             <Footer />
           </Grid>

@@ -17,6 +17,7 @@ import {
 import tetrisPic from "../../images/tetris.png";
 import todoPic from "../../images/todo.png";
 import agropex from "../../images/agropex.png";
+import crypto from "../../images/crypto.png";
 
 const Portfolio = () => {
   return (
@@ -29,17 +30,31 @@ const Portfolio = () => {
           <PortfolioContainer>
             <Projects>
               <CardHeader>
-                <CardTitle> ECommers App</CardTitle>
+                <CardTitle>Crypto Landing Page</CardTitle>
               </CardHeader>
               <CardBody>
                 <ProjectDescription>
-                  FullStack Ecommers App Like Amazon, Using The MERN STACK.
+                  A FrontEnd Landing Page for Crypto App made with React.
                 </ProjectDescription>
-                <BodyImage />
+                <BodyImage src={crypto} />
               </CardBody>
               <CardButtons>
-                <PriButton>Live</PriButton>
-                <SecButton>Code</SecButton>
+                <PriButton>
+                  <Links
+                    target="blank"
+                    href="https://sharp-ride-3dba7b.netlify.app/"
+                  >
+                    Live
+                  </Links>
+                </PriButton>
+                <SecButton>
+                  <Links
+                    target="blank"
+                    href="https://github.com/johndev247/crypto-landing-page"
+                  >
+                    Code
+                  </Links>
+                </SecButton>
               </CardButtons>
             </Projects>
             <Projects>
