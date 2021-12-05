@@ -53,14 +53,14 @@ const Home = () => {
                   <SpanThree>Git</SpanThree>
                 </CircleThree>
                 <CircleFour>
-                  <SpanFour>Rest API</SpanFour>
+                  <SpanFour>REST API</SpanFour>
                 </CircleFour>
                 <CircleFive>
                   <SpanFive>Graphql</SpanFive>
                 </CircleFive>
                 <CircleSix>
                   <SpanSix>
-                    HTML /<Break> CSS </Break>
+                    HTML<Break> CSS </Break>
                   </SpanSix>
                 </CircleSix>
                 <CircleSeven>
@@ -70,7 +70,7 @@ const Home = () => {
                 </CircleSeven>
                 <CircleEight>
                   <SpanEight>
-                    React Js/ <Break> Redux </Break>
+                    React<Break> Redux </Break>
                   </SpanEight>
                 </CircleEight>
                 <IllusPic src={Img} />
