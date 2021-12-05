@@ -54,6 +54,7 @@ const Resume = () => {
               <ResumeDetailText>
                 <ul>
                   <li>Web Development</li>
+    <li>Mobile App Development: ios / Android</li>
                   <li>Git Version Control</li>
                   <li>Cross-Browser Operability</li>
                   <li>Project management</li>
@@ -76,7 +77,7 @@ const Resume = () => {
             <ResumeInfoBox>
               <ResumeDetailTitle>Technical Skills</ResumeDetailTitle>
               <ResumeDetailText>
-                HTML5/HTML and CSS3/CSS, JavaScript, jQuery, React Js, Graphql,
+                HTML5/HTML and CSS3/CSS, JavaScript, jQuery, React Js,React Native, Graphql,
                 Postgresql, Mongodb, Next Js, Prisma, Express Js.
               </ResumeDetailText>
             </ResumeInfoBox>
