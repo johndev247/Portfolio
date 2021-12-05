@@ -57,6 +57,8 @@ export const CircleOne = styled.div`
   color: white;
   right: 3em;
   top: 2.7em;
+  justify-content: center;
+  align-items: center;
 `;
 export const CircleTwo = styled.div`
   background-color: ${({theme}) => theme.bubbleGreen};
@@ -68,6 +70,8 @@ export const CircleTwo = styled.div`
   border: 2px solid ${({theme}) => theme.variant};
   right: 8.6em;
   top: 0.1em;
+  justify-content: center;
+  align-items: center;
 `;
 export const CircleThree = styled.div`
   background-color: ${({theme}) => theme.bubblePupple};
@@ -79,6 +83,8 @@ export const CircleThree = styled.div`
   border: 2px solid ${({theme}) => theme.variant};
   left: 2.7em;
   top: 2.7em;
+  justify-content: center;
+  align-items: center;
 `;
 export const CircleFour = styled.div`
   background-color: ${({theme}) => theme.bubbleDarkBlue};
@@ -90,6 +96,8 @@ export const CircleFour = styled.div`
   border: 2px solid ${({theme}) => theme.variant};
   right: 8.9em;
   bottom: 0.5em;
+  justify-content: center;
+  align-items: center;
 `;
 export const CircleFive = styled.div`
   background-color: ${({theme}) => theme.bubbleBrown};
@@ -101,6 +109,8 @@ export const CircleFive = styled.div`
   border: 2px solid ${({theme}) => theme.variant};
   right: 0.5em;
   bottom: 8.6em;
+  justify-content: center;
+  align-items: center;
 `;
 export const CircleSix = styled.div`
   background-color: ${({theme}) => theme.bubbleBlack};
@@ -112,6 +122,8 @@ export const CircleSix = styled.div`
   border: 2px solid ${({theme}) => theme.variant};
   left: 2.7em;
   bottom: 2.7em;
+  justify-content: center;
+  align-items: center;
 `;
 export const CircleSeven = styled.div`
   background-color: ${({theme}) => theme.bubblePink};
@@ -123,6 +135,8 @@ export const CircleSeven = styled.div`
   border: 2px solid ${({theme}) => theme.variant};
   right: 3em;
   bottom: 2.7em;
+  justify-content: center;
+  align-items: center;
 `;
 export const CircleEight = styled.div`
   background-color: ${({theme}) => theme.bubbleRed};
@@ -134,6 +148,8 @@ export const CircleEight = styled.div`
   border: 2px solid ${({theme}) => theme.variant};
   left: 0.5em;
   bottom: 8.6em;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const SpanOne = styled.span`
@@ -142,7 +158,8 @@ export const SpanOne = styled.span`
   font-weight: bold;
   top: 0.7em;
   left: 0.4em;
-  font-size:12px;
+  font-size:14px;
+  
 `;
 export const SpanTwo = styled.span`
   background-color: unset;
@@ -150,6 +167,7 @@ export const SpanTwo = styled.span`
   font-weight: bold;
   top: 0.6em;
   left: 0.4em;
+  font-size:14px;
 `;
 export const SpanThree = styled.span`
   background-color: unset;
@@ -157,6 +175,7 @@ export const SpanThree = styled.span`
   font-weight: bold;
   top: 1.3em;
   left: 1.2em;
+  font-size:14px;
 `;
 export const SpanFour = styled.span`
   background-color: unset;
@@ -164,6 +183,7 @@ export const SpanFour = styled.span`
   font-weight: bold;
   top: 1.3em;
   left: 0.2em;
+  font-size:14px;
 `;
 export const SpanFive = styled.span`
   background-color: unset;
@@ -171,6 +191,7 @@ export const SpanFive = styled.span`
   font-weight: bold;
   top: 1.3em;
   left: 0.2em;
+  font-size:14px;
 `;
 export const SpanSix = styled.span`
   background-color: unset;
@@ -185,6 +206,7 @@ export const SpanSeven = styled.span`
   font-weight: bold;
   top: 1.3em;
   left: 0.2em;
+  font-size:14px;
 `;
 export const SpanEight = styled.span`
   background-color: unset;
@@ -192,6 +214,7 @@ export const SpanEight = styled.span`
   font-weight: bold;
   top: 1.3em;
   left: 0.2em;
+  font-size:14px;
 `;
 
 export const Break = styled.span`
