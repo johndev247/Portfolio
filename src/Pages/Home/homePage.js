@@ -142,7 +142,7 @@ export const SpanOne = styled.span`
   font-weight: bold;
   top: 0.7em;
   left: 0.4em;
-  font-size:16px;
+  font-size:12px;
 `;
 export const SpanTwo = styled.span`
   background-color: unset;
