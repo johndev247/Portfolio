@@ -18,6 +18,7 @@ import tetrisPic from "../../images/tetris.png";
 import todoPic from "../../images/todo.png";
 import agropex from "../../images/agropex.png";
 import crypto from "../../images/crypto.png";
+import healthcare from "../../images/seamhealth.png";
 
 const Portfolio = () => {
   return (
@@ -30,11 +31,12 @@ const Portfolio = () => {
           <PortfolioContainer>
             <Projects>
               <CardHeader>
-                <CardTitle>Crypto Landing Page</CardTitle>
+                <CardTitle>Crypto Exchange Page</CardTitle>
               </CardHeader>
               <CardBody>
                 <ProjectDescription>
-                  A FrontEnd Landing Page for Crypto App made with React.
+                  A FrontEnd Landing Page for Crypto Exchange App made with
+                  React.
                 </ProjectDescription>
                 <BodyImage src={crypto} />
               </CardBody>
@@ -51,6 +53,35 @@ const Portfolio = () => {
                   <Links
                     target="blank"
                     href="https://github.com/johndev247/crypto-landing-page"
+                  >
+                    Code
+                  </Links>
+                </SecButton>
+              </CardButtons>
+            </Projects>
+            <Projects>
+              <CardHeader>
+                <CardTitle> Health Care System</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <ProjectDescription>
+                  A Fullstack react health care project for self diagnosing
+                </ProjectDescription>
+                <BodyImage src={healthcare} />
+              </CardBody>
+              <CardButtons>
+                <PriButton>
+                  <Links
+                    target="blank"
+                    href="https://healthcaredemodemo.herokuapp.com/"
+                  >
+                    Live
+                  </Links>
+                </PriButton>
+                <SecButton>
+                  <Links
+                    target="blank"
+                    href="https://github.com/johndev247/healthcare_frontend"
                   >
                     Code
                   </Links>
