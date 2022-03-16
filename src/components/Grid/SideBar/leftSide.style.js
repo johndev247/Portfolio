@@ -98,7 +98,7 @@ export const LeftSideFooter = styled.nav`
   left: 0;
   height: 50px;
   width: 100%;
-  box-shadow: 4px 6px 18px 1px ${({theme}) => theme.shadow};
+  box-shadow: 1px 6px 18px 0px ${({theme}) => theme.shadow};
   background-color: ${({theme}) => theme.variant};
   color: white;
   grid-area: navfooter;

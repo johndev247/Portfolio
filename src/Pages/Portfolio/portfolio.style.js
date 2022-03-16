@@ -107,9 +107,8 @@ export const Projects = styled.div`
   display: grid;
   margin-left: 1em;
   border-radius: 1em;
-  height: 250px;
+  margin: 0.5em 0;
   box-shadow: 0px 1px 5px 1px ${({theme}) => theme.shadow};
-  grid-template-rows: 25% 1fr 20%;
   grid-template-areas:
     "header"
     "body"
@@ -150,8 +149,7 @@ export const CardButtons = styled.div`
   justify-content: space-evenly;
   align-self: center;
   width: 100%;
-  height: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   grid-area: buttons;
 `;
 
