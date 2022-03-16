@@ -108,6 +108,7 @@ export const Projects = styled.div`
   margin-left: 1em;
   border-radius: 1em;
   margin: 0.5em 0;
+  padding: 0 1px;
   box-shadow: 0px 1px 5px 1px ${({theme}) => theme.shadow};
   grid-template-areas:
     "header"
